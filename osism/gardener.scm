@@ -49,7 +49,7 @@
              "https://github.com/gardener/gardenlogin/releases/download/"
              version "/gardenlogin" "_linux_amd64"))
        (sha256
-        (base32 "12r2wk0j4aa7ibqhc716q6d8baxhvsbbsb3ivmnzqga584bcz6sa"))))
+        (base32 "1b1yqsfk1ifisqm5910xsc9k1hc47na56h7kk6qqaqlxsi1cclyx"))))
     (build-system copy-build-system)
     (arguments '(#:install-plan
                  '(("gardenlogin" "bin/kubectl-gardenlogin"))
