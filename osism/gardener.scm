@@ -52,7 +52,7 @@
         (base32 "12r2wk0j4aa7ibqhc716q6d8baxhvsbbsb3ivmnzqga584bcz6sa"))))
     (build-system copy-build-system)
     (arguments '(#:install-plan
-                 '(("gardenlogin" "bin/"))
+                 '(("gardenlogin" "bin/kubectl-gardenlogin"))
                  #:phases
                  (modify-phases %standard-phases
                    (replace 'unpack
