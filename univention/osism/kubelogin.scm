@@ -1,4 +1,4 @@
-(define-module (osism kubelogin)
+(define-module (univention osism kubelogin)
   #:use-module (guix build-system copy)
   #:use-module (guix download)
   #:use-module (guix gexp)

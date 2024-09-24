@@ -1,4 +1,4 @@
-(define-module (osism gardener)
+(define-module (univention osism gardener)
   #:use-module (guix build-system copy)
   #:use-module (guix download)
   #:use-module (guix gexp)
