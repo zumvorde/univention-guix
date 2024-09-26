@@ -37,6 +37,7 @@
                      #~(modify-phases %standard-phases
                                       (delete 'sanity-check))))))
 
+
 (define-public python-convertdate
   (package
     (name "python-convertdate")
@@ -112,6 +113,7 @@
                      #~(modify-phases %standard-phases
                                       (delete 'sanity-check))))))
 
+
 (define-public kaze
   (package
    (name "kaze")
@@ -127,6 +129,7 @@
             (url "https://git.knut.univention.de/kaze-development/kaze")
             (commit version)))
       (file-name (git-file-name name version))
+      (patches (list (local-file "patches/kaze.patch")))
       (sha256
        (base32 "0y12dv6ra0a9y81i28vwm1yq2j48h5l1zmln8ayh31ym3wvl8l9z"))))
    (build-system python-build-system)
@@ -150,5 +153,4 @@
            python-pymeeus
            python-pytz
            python-iso3166
-           python-dbus
-           ))))
+           python-dbus))))

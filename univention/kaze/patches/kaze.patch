@@ -1,0 +1,11 @@
+--- a/kaze
++++ b/kaze
+@@ -16,6 +16,8 @@
+ if sys.platform.endswith('darwin'):
+     os.environ['QT_MAC_WANTS_LAYER'] = '1'
+ 
++os.environ['SSL_CERT_DIR'] = '/etc/ssl/certs/'
++
+ try:
+     import dbus
+     from dbus.exceptions import DBusException
